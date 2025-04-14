@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Fort Myers Boat Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Fort Myers Boat Services</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>123 Marina Way</p>
+                        <p>Fort Myers, FL 33901</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>Main: (239) 555-0123</p>
+                        <p>Emergency: (239) 555-0124</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@fortmyersboatservices.com</p>
+                        <p>service@fortmyersboatservices.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 8am - 6pm</p>
+                        <p>Saturday: 9am - 4pm</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <h3>Find Us</h3>
+                    <div class="map">
+                        <!-- Replace with actual map embed code -->
+                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Fort+Myers,+FL&zoom=13&size=600x300&maptype=roadmap&markers=color:red%7C26.6406,-81.8723&key=YOUR_API_KEY" alt="Map to Fort Myers Boat Services">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a Service</option>
+                            <option value="mechanical">Mechanical Services</option>
+                            <option value="detailing">Detailing Services</option>
+                            <option value="winterization">Winterization</option>
+                            <option value="spring">Spring Commissioning</option>
+                            <option value="electrical">Electrical Systems</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I schedule a service appointment?</h3>
+                <p>You can schedule an appointment by calling us at (239) 555-0123, filling out our contact form, or visiting our facility during business hours.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you offer emergency services?</h3>
+                <p>Yes, we provide 24/7 emergency boat repair services. Call our emergency line at (239) 555-0124 for immediate assistance.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How long does a typical service take?</h3>
+                <p>Service duration varies depending on the type of service. Routine maintenance typically takes 2-4 hours, while more complex repairs may take several days. We'll provide an estimated timeframe when you schedule your appointment.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you service all boat brands and types?</h3>
+                <p>Yes, we service all major boat brands and types, from small fishing boats to luxury yachts. Our certified technicians are trained to work on both inboard and outboard engines.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What should I bring for my service appointment?</h3>
+                <p>Please bring your boat's service history, any relevant documentation, and a list of concerns or issues you'd like us to address. If you're experiencing specific problems, it's helpful to describe them in detail.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Marina Way</p>
+                <p>Fort Myers, FL 33901</p>
+                <p>Phone: (239) 555-0123</p>
+                <p>Email: info@fortmyersboatservices.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 8am - 6pm</p>
+                <p>Saturday: 9am - 4pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fort Myers Boat Services. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
