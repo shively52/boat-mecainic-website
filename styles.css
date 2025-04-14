@@ -15,10 +15,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: var(--dark-gray);
+    padding-top: 80px; /* Add padding equal to navbar height */
 }
 
 h1, h2, h3 {
@@ -35,8 +40,11 @@ h1, h2, h3 {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
+    height: 80px; /* Set fixed height */
 }
 
 .logo h1 {
@@ -74,10 +82,15 @@ h1, h2, h3 {
     text-align: center;
     color: var(--white);
     padding: 0 5%;
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content {
     max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
@@ -104,7 +117,14 @@ h1, h2, h3 {
     text-align: center;
     color: var(--white);
     padding: 0 5%;
-    margin-top: 60px;
+    margin-top: -80px; /* Negative margin to offset body padding */
+    position: relative;
+    z-index: 1;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 2;
 }
 
 .page-header-content h1 {
@@ -638,6 +658,7 @@ footer {
     .navbar {
         flex-direction: column;
         padding: 1rem;
+        height: auto;
     }
 
     .nav-links {
